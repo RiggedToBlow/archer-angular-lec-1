@@ -1,0 +1,6 @@
+<div class="posts">
+  <div *ngFor="let post of postsWithUsers$ | async" class="post">
+    <h1>{{post.title}}</h1>
+    <span>{{post.user?.name}}</span>
+  </div>
+</div>
