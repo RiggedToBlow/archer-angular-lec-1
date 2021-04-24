@@ -1,0 +1,19 @@
+<input [formControl]="userName" type="text">
+<div class="users">
+  <div *ngFor="let user of users$ | async" class="user">
+    <span>{{user.name}}</span>
+  </div>
+</div>
+<br><br><br><br><br>
+
+<form [formGroup]="form">
+  <div>username</div>
+  <input formControlName="name" type="text">
+  <hr>
+  <div>address</div>
+  <input formControlName="address" type="text">
+  <hr>
+  <div>phone number</div>
+  <input formControlName="number" type="text">
+  <button (click)="onUserCreate()">Create User</button>
+</form>

@@ -3,21 +3,30 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello/hello.component';
+import { UsersComponent } from './users/users.component';
 import {HttpClientModule} from '@angular/common/http';
-import { UsersPostsComponent } from './users-posts/users-posts.component'
+import { UsersPostsComponent } from './users-posts/users-posts.component';
+import { AlbumsComponent } from './albums/albums.component';
+import { AlbumDetailsComponent } from './album-details/album-details.component'
+import { PhotosService } from './photos.service';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent,
-    UsersPostsComponent
+    UsersComponent,
+    UsersPostsComponent,
+    AlbumsComponent,
+    AlbumDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    PhotosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

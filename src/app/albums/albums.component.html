@@ -1,0 +1,7 @@
+<div class="album-container">
+  <div *ngFor="let album of albums$ | async" class="album">
+    <button>
+      <h3 routerLink="./{{album.id}}">{{album.title}}</h3>
+    </button>
+  </div>
+</div>
