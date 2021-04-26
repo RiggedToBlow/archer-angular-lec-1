@@ -10,13 +10,15 @@ import { AlbumsComponent } from './albums/albums.component';
 import { AlbumDetailsComponent } from './album-details/album-details.component'
 import { PhotosService } from './photos.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ReactFormComponent } from './react-form/react-form.component';
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     UsersPostsComponent,
     AlbumsComponent,
-    AlbumDetailsComponent
+    AlbumDetailsComponent,
+    ReactFormComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { AlbumDetailsComponent } from './album-details/album-details.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { UsersComponent } from './users/users.component';
 import { UsersPostsComponent } from './users-posts/users-posts.component';
+import { ReactFormComponent } from './react-form/react-form.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'albums/:id',
     component:AlbumDetailsComponent
+  },
+  {
+    path:'sp-chang',
+    component:ReactFormComponent
   }
 ];
 

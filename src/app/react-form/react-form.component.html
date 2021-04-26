@@ -1,0 +1,12 @@
+<p>react-form works!</p>
+<div *ngFor="let data of data$ | async"  class="form">
+  <div class="name">{{data.name}}</div>
+
+</div>
+<form [formGroup]="form">
+  <div>username</div>
+
+  <input formControlName="name" type="text">
+  <hr>
+
+</form>
