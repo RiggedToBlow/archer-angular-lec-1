@@ -1,0 +1,23 @@
+<form [formGroup]="form">
+
+  <select formControlName="currency">
+    <option *ngFor="let currency of currencies$ | async" [value]="currency.name">
+      {{currency.name}}
+    </option>
+  </select>
+  <br>
+  <input type="text" formControlName="syp">
+
+  <div *ngIf="askbid$ | async as askbid">
+    <h3>ASK:</h3>
+    <p>
+     {{askbid.ask}}
+    </p>
+
+    <h3>BID:</h3>
+    <p>
+      {{askbid.bid}}
+    </p>
+  </div>
+
+</form>

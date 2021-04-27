@@ -4,6 +4,7 @@ import { AlbumDetailsComponent } from './album-details/album-details.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { UsersComponent } from './users/users.component';
 import { UsersPostsComponent } from './users-posts/users-posts.component';
+import { CurrencyCalcComponent } from './currency-calc/currency-calc.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'albums/:id',
     component:AlbumDetailsComponent
+  },
+  {
+    path:'currency',
+    component:CurrencyCalcComponent
   }
 ];
 
